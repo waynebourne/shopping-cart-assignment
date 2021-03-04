@@ -1124,7 +1124,7 @@ function renderCartView() {
     cheapBlock.style.backgroundColor = '#fff';
     var cheapImg = document.createElement('img');
     cheapImg.classList.add('mx-3');
-    cheapImg.src = '/static/images/lowest-price.png';
+    cheapImg.src = 'static/images/lowest-price.png';
     cheapImg.alt = 'You won\'t find it cheaper anywhere';
     var cheapBlockText = document.createElement('div');
     cheapBlockText.style.display = 'inline-block';
@@ -1557,7 +1557,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62985" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56884" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
